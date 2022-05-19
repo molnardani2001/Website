@@ -1,0 +1,181 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: sans-serif;
+    
+    background-color: white;
+    background-image: url('../kepek/hatter.jpg');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 5% 25px;
+    /*overflow-x: hidden;*/
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 140px;
+    margin-left: -40px;
+}
+
+h3 {
+    margin-top: 2px;
+    margin-left: 0px;
+}
+
+nav#fomenu {
+    margin-top: 70px;
+    margin-left: 350px;
+    margin-right: 176px;
+}
+
+nav#fomenu ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav#fomenu li{
+    float: left;
+    width: 25%;
+}
+
+nav#fomenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav#fomenu li:hover {
+    background-color: #111;
+}
+
+li.active {
+    background-color: #4CAF50;
+}
+
+.kipozicional{
+    margin-left: 9999999999px;
+}
+
+main{
+    width: 60%;
+    margin: auto;
+}
+
+.komment img {
+    width: 5%;
+    height: auto;
+    float: left;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.komment p:nth-of-type(1){
+    margin-top: 2%;
+}
+
+.komment p:nth-of-type(2){
+    clear: both;
+    font-style: italic;
+}
+
+.komment {
+    border: 1px black solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+
+    margin-bottom: 20px;
+}
+
+hr {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a {
+    color: rgb(84, 84, 226);
+    text-decoration: underline;
+}
+
+a:visited {
+    color:rgb(173, 16, 50);
+}
+
+@media screen and (max-width: 1070px){
+    nav#fomenu li:nth-of-type(3){
+        clear: both;
+    }
+
+    nav#fomenu li {
+        width: 50%;
+    }
+
+    nav#oldalmenu{
+        margin-left: -170px;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    .komment img{
+        width: 7%;
+    }
+
+    nav#fomenu {
+        width: 50%;
+        margin-left: 250px;
+    }
+
+}
+
+@media screen and (max-width: 810px){
+    nav#fomenu {
+        margin-top: 200px;
+        margin-left: 10%;
+    }
+
+    nav#fomenu li {
+        width: 100%;
+        clear: both;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    .komment img{
+        width: 9%;
+    }
+
+    h1 {
+        margin-top: 80px;
+        margin-left: -10px;
+    }
+
+    body{
+        background-position: 50% 25px;
+    }
+
+    nav#fomenu {
+        margin: auto;
+        margin-top: 150px;
+        width: 60%;
+    }
+}
+
+

@@ -1,0 +1,58 @@
+main {
+    width: 90%;
+    margin: auto;
+}
+
+nav#fomenu, nav#oldalmenu, a[href="#teto"], footer, hr {
+    display: none;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+figure img {
+    width: 45%;
+    display: block;
+    margin: auto;
+}
+
+aside#esemenyek table {
+    border: 3px double grey;
+    margin: 0 auto;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+aside#esemenyek table th, aside#esemenyek table td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+section#kiado {
+    page-break-before: always;
+}
+
+nav:last-of-type a {
+    display: none;
+}
+
+p {
+    text-align: justify;
+}
+
+aside#esemenyek {
+    page-break-before: always;
+}
+
+section#kiado {
+    page-break-before: avoid;
+}
+
+main section:last-of-type p:last-of-type {
+    display: none;
+}

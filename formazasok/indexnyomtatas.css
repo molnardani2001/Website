@@ -1,0 +1,37 @@
+main {
+    width: 90%;
+}
+
+nav#fomenu, footer, a[href="#teto"], nav#oldalmenu, hr {
+    display: none;
+}
+
+p {
+    text-align: justify;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+nav:last-of-type a {
+    display: none;
+}
+
+aside#urlap {
+    page-break-before: always;
+}
+
+section#socialmedia {
+    display: none;
+}

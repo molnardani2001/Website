@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formazasok/index.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="formazasok/indexnyomtatas.css" media="print">
+    <link rel="stylesheet" href="lightbox/dist/css/lightbox.css">
+    <link rel="icon" href="kepek/favicon.ico">
+    <title>Kezdőlap - Varning honlapja</title>
+</head>
+
+<body>
+    <nav class="kipozicional">
+        <a href="#tartalom">Ugrás a tartalomra</a>
+    </nav>
+    <a id="teto"></a>
+    <header>
+        <nav id="fomenu">
+            <ul>
+                <li class="active"><a href="index.html">Kezdőlap</a></li>
+                <li><a href="magamrol.html">Magamról</a></li>
+                <li><a href="galeria.html">Galéria/Videók</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Kezdőlap</h1>
+
+            <nav id="oldalmenu">
+                <ul>
+                    <li><a href="#azoldalrol">Az oldalról</a></li>
+                    <li><a href="#azurlaprol">Az űrlapról</a></li>
+                    <li><a href="#urlap">Űrlap</a></li>
+                    <li><a href="#socialmedia">Social media</a></li>
+                </ul>
+            </nav>
+
+            <h2 id="tartalom">Tartalom</h2>
+            <section id="azoldalrol">
+                <h3>Az oldalról</h3>
+                <p>
+                    Üdvözöllek a weboldalon!
+                    <em>Várnai Márton</em> vagyok, és szeretném kicsit bemutatni a munkásságomat, mivel foglalkozom szabadidőmben.
+                    A magamról menüpontban olvashatsz arról, hogy hogyan kezdtem el a <b>zenével</b> foglalkozni, mi inspirált.
+                    Elmesélem, hogy miket kellett tennem mire eljutottam odáig, hogy játsszák a rádióban a zenéimet. Továbbá
+                    láthatsz egy táblázatot ami a nagyobb eseményeket tartalmazza, amik velem történtek, majd pedig beszélek
+                    kicsit a kiadóról ahol jelenleg vagyok és hogy idáig is milyen út vezetett.
+                    A galéria/videók menüben láthatsz pár képet rólam fellépés/felvétel közben, illetve videókat, milyen
+                    volt a
+                    hangulat 1-1 felvétel közben, illetve milyen zenéket és videókat csinálok youtube-ra.
+                    A Fórum oldalon olvashatsz pár visszajelzést a zenéimről és a fellépéseimről.
+                    Végül visszatérve a főoldalra kitölthetsz egy űrlapot, amelyről alább olvashatsz (↓).
+    
+                </p>
+                <figure>
+                    <a href="kepek/fooldal1.jpg" data-lightbox="nagyitas"><img src="kepek/thumbnails/fooldal1.jpg" alt="Kép egy fellépésemről"></a>
+                    <figcaption>Fotó egy hatalmas bulimról</figcaption>
+                </figure>
+
+            </section>
+
+            <section id="azurlaprol">
+                <h3>Az űrlapról</h3>
+                <p>
+                    Az űrlap/felmérés témája egyszerű lenne, csupán a kedvenc számodra van hozzá szükségem, egy ilyen kisebb
+                    vélemény kutatáshoz, hogy melyek azok a zenék amelyek felkapottak és érdemes belőlük mixet vagy mashupot
+                    csinálni. Utána, ha esetleg hallottad már az egyik zenémet (nagyon remélem 😊), akkor adhatsz egy kisebb
+                    visszajelzést, hogy mit gondolsz a munkásságomról, illetve további ötleteket is szívesen fogadok, hogy
+                    milyen stílusban hallgatnál tőlem szívesen zenét, akár mik azok a konkrét zenék amiket szívesen
+                    meghallgatnál összemixelve.
+                </p>
+            </section>
+
+            <aside id="urlap">
+                <h3>Űrlap</h3>
+
+                <form action="mailto:ihn8hy@inf.elte.hu" method="POST" enctype="text/plain">
+                    <fieldset>
+                        <legend>Mi a nemed?</legend>
+                        <input type="radio" name="nemvalasztas" value="no" id="nonem"> <label for="nonem"> Nő</label>
+                        <br>
+                        <input type="radio" name="nemvalasztas" value="ferfi" id="ferfinem"> <label for="ferfinem">
+                            Férfi</label> <br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Kedvenc zene</legend>
+                        <label for="remix">Kedvenc számod amiből szívesen hallgatnál remixet:</label> <br>
+                        <input type="text" id="remix" name="kedvencszam" size="60" maxlength="100"> <br> <br>
+
+                        <label for="hallott">Jelöld be, ha hallottad már valamelyik zenémet: </label>
+                        <input type="checkbox" id="hallott" name="ismer" value="igen"> <br>
+                    </fieldset>
+
+                    <fieldset id="munkassagomrol">
+                        <legend>A munkásságomról</legend>
+                        <label for="nev">A neved:</label> <br>
+                        <input type="text" id="nev" name="neved" size="60" maxlength="30" placeholder="Ide írd a neved">
+                        <br>
+
+                        <label for="email">E-mail címed:</label> <br>
+                        <input type="text" id="email" name="emailed" size="60" maxlength="50"
+                            placeholder="Ide írd az e-mail címed"> <br>
+                        <label for="munkassagom">Mit gondolsz a munkásságomról, melyik stílusokban hallgatnál tőlem
+                            szívesen
+                            zenét?</label> <br>
+                        <textarea id="munkassagom" name="velemeny" rows="8" cols="54"
+                            placeholder="Ide írd a véleményed"></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Adatok elküldése</legend>
+                        <input type="submit" value="Elküld">
+                        <input type="reset" value="Töröl">
+                    </fieldset>
+                </form>
+            </aside>
+
+            <section id="socialmedia">
+                <h3>Social media és elérhetőségek</h3>
+    
+                <nav>
+                    <p>Facebook: <a href="https://www.facebook.com/iamvarning/"
+                            target="_blank">https://www.facebook.com/iamvarning/</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/iamvarning/"
+                            target="_blank">https://www.instagram.com/iamvarning/</a></p>
+                    <p>Tiktok: <a href="https://vm.tiktok.com/ZMe6hMqDt/"
+                            target="_blank">https://vm.tiktok.com/ZMe6hMqDt/</a></p>
+                    <p>Youtube: <a href="https://www.youtube.com/channel/UCVR_PHzP-ySwJzVjmHJjdtw"
+                            target="_blank">https://www.youtube.com/channel/UCVR_PHzP-ySwJzVjmHJjdtw</a></p>
+    
+                    <p>E-mail: <a href="mailto:varningdj@gmail.com">varningdj@gmail.com</a></p>
+                </nav>
+                <p>Telefonszám: +36305169350</p>
+    
+                
+            </section>
+        </article>
+        <nav><a href="#teto">Ugrás az oldal tetejére</a></nav>
+    </main>
+
+    <hr>
+
+    <footer>
+        <address>
+            <p>
+                Készítette: Molnár Dániel<br>
+                (<a href="mailto:ihn8hy@inf.elte.hu">ihn8hy@inf.elte.hu</a>)
+            </p>
+        </address>
+    </footer>
+
+    <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>

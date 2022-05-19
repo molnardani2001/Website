@@ -1,0 +1,30 @@
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+main {
+    margin-left: 10%;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+video, nav#fomenu, iframe, hr, footer, a[href="#teto"], .video, .videoleiras, #cim3 {
+    display: none;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.galeria {
+    margin-bottom: 10px;
+}
+
+nav:last-of-type a {
+    display: none;
+}

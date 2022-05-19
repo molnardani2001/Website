@@ -1,0 +1,216 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: sans-serif;
+    
+    background-color: white;
+    background-image: url('../kepek/hatter.jpg');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 5% 25px;
+    /*overflow-x: hidden;*/
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 140px;
+    margin-left: -30px;
+}
+
+nav#fomenu {
+    margin-top: 69px;
+    margin-left: 350px;
+    margin-right: 176px;
+}
+
+nav#fomenu ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    
+}
+
+nav#fomenu li{
+    float: left;
+    width: 25%;
+}
+
+nav#fomenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav#fomenu li:hover {
+    background-color: #111;
+}
+
+li.active {
+    background-color: #4CAF50;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+}
+
+.kipozicional{
+    margin-left: 9999999999px;
+}
+
+nav#oldalmenu {
+    float: left;
+    margin-left: -260px;
+    border-right: 1px solid #111;
+    padding-right: 35px;
+    background-color: rgb(241, 235, 235);
+}
+
+nav#oldalmenu a:visited {
+    text-decoration: none;
+}
+
+nav#oldalmenu ul li {
+    margin-top: 10px;
+}
+
+nav#oldalmenu ul li a{
+    text-decoration: none;
+}
+
+nav#oldalmenu ul li a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify;
+}
+
+hr {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section {
+    display: block;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+
+
+figure a img {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    width: 95%;
+    height: auto;
+}
+
+figure img:hover {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+a {
+    color: rgb(84, 84, 226);
+    text-decoration: underline;
+}
+
+a:visited {
+    color:rgb(173, 16, 50);
+}
+
+@media screen and (max-width: 1070px){
+    nav#fomenu li:nth-of-type(3){
+        clear: both;
+    }
+
+    nav#fomenu li {
+        width: 50%;
+    }
+
+    nav#oldalmenu{
+        margin-left: -170px;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    nav#fomenu {
+        width: 50%;
+        margin-left: 250px;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 810px){
+    nav#fomenu {
+        margin-top: 200px;
+        margin-left: 10%;
+    }
+
+    nav#fomenu li {
+        width: 100%;
+        clear: both;
+    }
+
+    nav#oldalmenu {
+        margin-left: -9999999999999px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    form {
+        overflow: scroll;
+    }
+
+    h1 {
+        margin-top: 80px;
+        margin-left: -10px;
+    }
+
+    body{
+        background-position: 50% 25px;
+    }
+
+    nav#fomenu {
+        margin: auto;
+        margin-top: 150px;
+        width: 60%;
+    }
+
+    section#socialmedia {
+        overflow: scroll;
+    }
+}
